@@ -16,6 +16,7 @@ def directors_totals(nds)
 
   if result[director] == nds[:movie][:director]
     result[director] << nds[:movie][:worldwide_gross]
+  end 
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
