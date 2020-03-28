@@ -12,7 +12,7 @@ def directors_totals(nds)
 
   nds[:movie][:director].each do |director|
       result[director] = (if result[director] == nds[:movie][:director]
-      result[director] << nds[:movie][:worldwide_gross]
+       nds[:movie][:worldwide_gross]
       end)
   end
   #
