@@ -10,7 +10,8 @@ def directors_totals(nds)
   result = {
   }
 
-  result[nds[:movies][:director]] = nds[:movies][:worldwide_gross]
+  nds[:movie][:director].each do |director|
+    result[director] << nds[:movie][:worldwide_gross]
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
